@@ -6,4 +6,15 @@
 //  Copyright © 2018 yesukan. All rights reserved.
 //
 
+
 import Foundation
+import RealmSwift
+
+class Category: Object {
+    @objc dynamic var name : String = ""
+    
+    //connection of classes to do the relation
+    let items = List<Item>()
+    
+    
+}
