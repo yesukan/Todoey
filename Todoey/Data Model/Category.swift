@@ -12,7 +12,7 @@ import RealmSwift
 
 class Category: Object {
     @objc dynamic var name : String = ""
-    
+    @objc dynamic var color : String = ""
     //connection of classes to do the relation
     let items = List<Item>()
     
